@@ -1,0 +1,749 @@
+@charset "UTF-8";
+/* Document CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+body {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+div {
+  box-sizing: border-box;
+}
+input,
+textarea,
+button,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+body,
+b {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-size: clamp(12px, 14px, 20px);
+}
+.headersection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  margin: 0px auto;
+  align-content: center;
+  justify-content: center;
+  background-color: dodgerblue;
+  position: relative;
+}
+.headersection button {
+  margin-left: auto;
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  display: none;
+}
+.profileimage {
+  margin-right: auto;
+  max-width: max-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 15px 5px;
+}
+.menusection {
+  margin-left: auto;
+  max-width: max-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.profileimage a {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 3px #000;
+}
+.profileimage a span {
+  /* font-size: 100%; */
+  font-size: clamp(65%, 70%, 90%);
+}
+.menusection ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  max-width: max-content;
+  width: 100%;
+}
+.menusection ul li {
+  margin: 0px 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menusection ul li a {
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 15px 5px;
+}
+.menusection ul li a.active {
+  background-color: rgb(21, 34, 34);
+  color: white;
+}
+.menusection ul li a:hover {
+  background-color: rgb(21, 34, 34);
+  color: white;
+}
+.layoutsection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  min-height: 86vh;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+.footersection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  margin: 0px auto;
+  background-color: dodgerblue;
+}
+.footersection p {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.footersection p span {
+  margin: 0px 2px;
+}
+.footersection p a {
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  margin: 0px 5px;
+}
+.homesection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.profileimage-grp {
+  margin-right: auto;
+  padding: 5px 10px;
+  max-width: 22%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0px 0px 8px #d2cbcb;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    45deg,
+    dodgerblue,
+    #fff,
+    #fff,
+    #fff,
+    dodgerblue
+  );
+}
+.profileimage-grp span {
+  max-width: 150px;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  outline: 5px solid dodgerblue;
+  outline-offset: 5px;
+  align-content: space-between;
+  justify-content: center;
+}
+.profileimage-grp h1 {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 20px auto;
+  color: dodgerblue;
+  font-family: "Great Vibes", cursive;
+  font-size: 200%;
+  font-weight: bolder;
+  text-transform: capitalize;
+  text-shadow: 0px 0.5px 0.5px #000;
+}
+.aboutme-grp {
+  margin-right: auto;
+  padding: 5px 10px;
+  max-width: 75%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-content: center;
+}
+.aboutme-grp p {
+  color: #666;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
+  margin: 0px;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+.profileimage-grp h4 {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  color: dodgerblue;
+  font-size: 100%;
+  margin: 0px;
+  text-shadow: 0px 0.5px 0.5px #000;
+}
+.educationgrp {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: left;
+}
+
+.eduction-box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 360px;
+  width: 100%;
+  padding: 25px 10px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 1px #5891db;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+.eduction-box span {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  padding: 10px;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 20px;
+  max-width: 70px;
+  width: 100%;
+  font-size: 14px;
+}
+.eduction-box h3 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  margin: 0px 0px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+}
+.eduction-box h4 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+  justify-content: left;
+  align-content: baseline;
+}
+.eduction-box h4 h6 {
+  margin: 0px auto;
+  font-size: 100%;
+  font-weight: bold;
+  color: dodgerblue;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px;
+  background-color: black;
+  border-radius: 40px;
+  position: absolute;
+  top: -21px;
+  right: 20px;
+}
+.eduction-box b {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  margin: 0px 0px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #666;
+  justify-content: left;
+  align-content: baseline;
+}
+.eduction-box h5 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  margin: 0px 0px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #666;
+  justify-content: left;
+  align-content: baseline;
+}
+.experiencegrp {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: left;
+}
+
+.experiencebox {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 360px;
+  width: 100%;
+  padding: 25px 10px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 1px #5891db;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  justify-content: left;
+  align-content: baseline;
+}
+.experiencebox span {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  padding: 10px;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 20px;
+  max-width: max-content;
+  width: 100%;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.experiencebox h3 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  margin: 0px 0px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+}
+.experiencebox h4 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  justify-content: left;
+  align-content: baseline;
+}
+.list-description {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  justify-content: left;
+  align-content: baseline;
+}
+.list-description p {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  justify-content: left;
+  align-content: baseline;
+  text-align: left;
+  line-height: 25px;
+  margin: 0px;
+  color: #666;
+}
+.summarygrp {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: left;
+}
+
+.summarytext {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 25px 10px;
+  margin: 10px auto;
+  box-shadow: 0px 0px 1px #5891db;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  justify-content: left;
+  align-content: baseline;
+}
+.summarytext ul {
+  text-align: left;
+  line-height: 35px;
+  padding: 0px;
+  margin: 0px auto;
+  list-style-position: inside;
+  color: #666;
+  max-width: max-content;
+  width: 100%;
+}
+
+.technicalskillgrp {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: left;
+}
+.technicalskilltext {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 25px 10px;
+  margin: 10px auto;
+  box-shadow: 0px 0px 1px #5891db;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  justify-content: left;
+  align-content: baseline;
+}
+.technicalskilltext ul {
+  text-align: left;
+  line-height: 35px;
+  padding: 0px;
+  list-style-position: inside;
+  color: #666;
+  max-width: max-content;
+  width: 100%;
+  margin: 0px auto;
+}
+.wesitelinkgrp {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: left;
+}
+
+.wesitelinkgrp ul {
+  text-align: left;
+  line-height: 35px;
+  padding: 0px;
+  margin: 0px;
+  list-style-position: inside;
+  color: #666;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wesitelinkgrp ul li {
+  list-style: none;
+  padding: 10px;
+  margin: 0px auto;
+}
+.wesitelinkgrp ul li a {
+  background-color: dodgerblue;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.hobbiesgrp {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-content: baseline;
+  justify-content: left;
+  height: auto;
+}
+.hobbiesgrp h1,
+.educationgrp h1,
+.experiencegrp h1,
+.summarygrp h1,
+.technicalskillgrp h1,
+.wesitelinkgrp h1,
+.personaldetailgrp h1,
+.form-contactus h1,
+.aboutme-grp h1 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  font-size: clamp(3rem, 2.5vw, 2rem);
+  font-weight: 600;
+  text-transform: capitalize;
+  color: dodgerblue;
+  margin: 25px 0px;
+  justify-content: center;
+  font-family: "Fredericka the Great", cursive;
+  text-shadow: 0px 5px 6px #666;
+}
+.hobbiesboxgrp {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: center;
+}
+.hobbiesbox {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
+  width: 100%;
+  margin: 10px;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0px 2px 20px #eee;
+  border-radius: 10px;
+  text-align: center;
+}
+.hobbiesbox span {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  color: dodgerblue;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+.hobbiesbox span svg {
+  margin: 5px 10px;
+}
+.hobbiesbox p {
+  font-size: 16px;
+  margin: 5px 0px;
+  font-weight: 400;
+  min-height: 50px;
+}
+.personaldetailgrp {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: center;
+}
+
+.personaldetailbox {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: 100%;
+  margin: 10px;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0px 2px 20px #eee;
+  border-radius: 10px;
+  text-align: center;
+}
+.personaldetailbox p {
+  display: flex;
+  /* flex-wrap: wrap; */
+  max-width: 100%;
+  width: 100%;
+  margin: 5px 0px;
+  font-size: clamp(12px, 14px, 20px);
+  font-weight: normal;
+  color: white;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  background-color: #240626;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.personaldetailbox p span {
+  max-width: 180px;
+  width: 100%;
+  text-align: left;
+}
+.personaldetailbox p b {
+  max-width: 300px;
+  width: 100%;
+  text-align: right;
+}
+.form-contactus {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: center;
+}
+
+.form-contactus form {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: 100%;
+  margin: 10px;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0px 2px 20px #eee;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+}
+.form-contactus form label {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  margin: 5px 0px;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  padding: 5px;
+  justify-content: center;
+  align-content: center;
+}
+.form-contactus form label p {
+  margin: 0px 0px;
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 25px;
+  width: 100%;
+}
+.form-contactus form label input {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #dbdbdb;
+}
+.form-contactus form label textarea {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #dbdbdb;
+  resize: none;
+}
+.form-contactus form label input[type="submit"] {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightseagreen;
+  width: 100%;
+  max-width: max-content;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+
+
